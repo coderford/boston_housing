@@ -12193,6 +12193,7 @@ Standard deviation of prices: $165171.13154429474
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
 <p>The main benefit of splitting the dataset into training and testing subsets is that we can make sure that our model is actually good at predicting values by testing the model on the test subset. By testing the model, we can make sure that our model doesn't either underfit or overfit the training data. Without testing, we would be unable to know whether our model is a good generalization for the data or just memorizing it.</p>
+<p>We can avoid overfitting using test-train-split by first splitting our data into training and testing sets, training our model on the training set and then testing its predictions on the testing set. If our model fits the training data very well but fails to fit the testing data, we know that our model is overfitting the training data and its complexity needs to be reduced. So, the test-train-split method is used to detect an overfitting model and we have to then tweak our model to get a good fit which performs well on both the training and testing set.</p>
 
 </div>
 </div>
